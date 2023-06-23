@@ -1,0 +1,14 @@
+
+body{
+    background: #cadefc; 
+}
+
+.main {
+  border: 1px dashed #291d08;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 500px;
+  height: 700px;
+}
