@@ -8,6 +8,7 @@ body {
 
 .main {
   border: 1px dashed #291d08;
+  border-radius: 5px;
   display: block;
   margin: 0 auto;
   margin-top: 50px;
@@ -46,7 +47,7 @@ body {
 .search-control,
 .search-button,
 .current-loc {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .search-control {
@@ -59,9 +60,9 @@ body {
 }
 
 .search-button {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 10px;
-  font-size: 28px;
+  font-size: 25px;
   border-radius: 100px;
   border: 1px solid rgb(95, 92, 92);
   background-color: #fbfcd8;
@@ -81,4 +82,17 @@ body {
 #info {
   font-family: "Rokkitt", serif;
   font-size: 18px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.icon-1,
+.icon-2,
+.icon-3,
+#col {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
 }
