@@ -1,6 +1,5 @@
-
-body{
-    background: #cadefc; 
+body {
+  background: #cadefc;
 }
 
 .main {
@@ -11,4 +10,5 @@ body{
   margin-bottom: 50px;
   width: 500px;
   height: 700px;
+  background: #c3bef0;
 }
