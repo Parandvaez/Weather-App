@@ -23,7 +23,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
     <title>Weather App</title>
@@ -33,7 +45,7 @@
       <div class="main">
         <div class="container">
           <div class="row">
-            <div class="col">
+            <div class="col-6">
               <form class="search-for-city" id="search">
                 <input
                   type="search"
@@ -43,10 +55,10 @@
                 />
               </form>
             </div>
-            <div class="col-md-auto">
+            <div class="col-2">
               <button type="submit" class="search-button">🔍</button>
             </div>
-            <div class="col col-lg-2">
+            <div class="col-4">
               <button type="submit" class="current-loc">
                 Current Location
               </button>
@@ -54,13 +66,12 @@
           </div>
         </div>
         <br />
-        <br />
         <div class="container-2">
           <div class="today">
-            <h2>Tehran, IRI</h2>
+            <h2 class="city-name">Tehran, IRI</h2>
             <h3>
               <div class="time">10:00</div>
-              Friday
+              <div class="day">Friday</div>
             </h3>
           </div>
           <div class="waether-info">
@@ -70,10 +81,10 @@
                   <i class="fa-solid fa-sun" style="color: #a89eff"></i>
                 </div>
                 <span id="temp">25°</span>
-                <a href="" class="units" id="F-units">F</a> |
+                <a href="" class="units" id="F-units">F </a>|
                 <a href="" class="units" id="C-units">C</a>
               </div>
-              <div class="col">
+              <div class="col" id="info">
                 <ul>
                   <li>Humidity: 23%</li>
                   <li>Wind: 11 mph</li>

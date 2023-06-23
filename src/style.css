@@ -13,15 +13,67 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 500px;
-  height: 700px;
+  height: 600px;
   background: #fdffcd;
 }
 
-h2 {
+.city-name,
+.forcast-heading {
   font-family: "Roboto Slab", serif;
 }
 
 .forcast-heading {
-  display: block;
-  margin: 0 auto;
+  text-align: center;
+}
+
+.city-name,
+.day,
+.time,
+.emoji,
+#temp,
+.units {
+  margin-left: 20px;
+}
+.emoji {
+  font-size: 40px;
+}
+
+.day,
+.time {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.search-control,
+.search-button,
+.current-loc {
+  margin-top: 10px;
+}
+
+.search-control {
+  border-radius: 30px;
+  border: 1px solid black;
+  width: 240px;
+  height: 40px;
+  text-align: left;
+  background-color: #fbfcd8;
+}
+
+.search-button {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 28px;
+  border-radius: 100px;
+  border: 1px solid rgb(95, 92, 92);
+  background-color: #fbfcd8;
+}
+
+.current-loc {
+  border-radius: 30px;
+  border: 1px solid rgb(95, 92, 92);
+  background-color: #fbfcd8;
+  font-family: 'Abel', sans-serif;
+  font-size: 14px;
+  margin-left: 3px;
+  width: 130px;
+  height: 40px;
 }
