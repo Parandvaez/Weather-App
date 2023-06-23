@@ -71,9 +71,14 @@ body {
   border-radius: 30px;
   border: 1px solid rgb(95, 92, 92);
   background-color: #fbfcd8;
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 14px;
   margin-left: 3px;
   width: 130px;
   height: 40px;
+}
+
+#info {
+  font-family: "Rokkitt", serif;
+  font-size: 18px;
 }
