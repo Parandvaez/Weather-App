@@ -16,13 +16,96 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/7a4e8654de.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Hello World</h1>
-      <a href="" class="btn btn-primary">Click me</a>
+    <div class="container-main">
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <form class="search-for-city" id="search">
+                <input
+                  type="search"
+                  class="search-control"
+                  id="input-search-city"
+                  placeholder="Search for a city"
+                />
+              </form>
+            </div>
+            <div class="col-md-auto">
+              <button type="submit" class="search-button">🔍</button>
+            </div>
+            <div class="col col-lg-2">
+              <button type="submit" class="current-loc">
+                Current Location
+              </button>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="container-2">
+          <div class="today">
+            <h2>Tehran, IRI</h2>
+            <h3>
+              <div class="time">10:00</div>
+              Friday
+            </h3>
+          </div>
+          <div class="waether-info">
+            <div class="row">
+              <div class="col">
+                <div class="emoji">
+                  <i class="fa-solid fa-sun" style="color: #a89eff"></i>
+                </div>
+                <span id="temp">25°</span>
+                <a href="" class="units" id="F-units">F</a> |
+                <a href="" class="units" id="C-units">C</a>
+              </div>
+              <div class="col">
+                <ul>
+                  <li>Humidity: 23%</li>
+                  <li>Wind: 11 mph</li>
+                  <li>Air Quality: Fair</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container-3">
+          <h2>Forcast</h2>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col">
+              <div class="icon-1">
+                <i class="fa-solid fa-sun" style="color: #a89eff"></i>
+              </div>
+              Saturday
+            </div>
+            <div class="col">
+              <div class="icon-2">
+                <i class="fa-solid fa-cloud" style="color: #a89eff"></i>
+              </div>
+              Sunday
+            </div>
+            <div class="col">
+              <div class="icon-3">
+                <i class="fa-solid fa-cloud-rain" style="color: #a89eff"></i>
+              </div>
+              Monday
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>
