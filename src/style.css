@@ -1,5 +1,9 @@
 body {
-  background: #cadefc;
+  background: radial-gradient(
+    905px at 4.9% 85.8%,
+    rgb(255, 243, 242) 0.1%,
+    rgb(255, 247, 220) 57.6%
+  );
 }
 
 .main {
@@ -10,5 +14,14 @@ body {
   margin-bottom: 50px;
   width: 500px;
   height: 700px;
-  background: #c3bef0;
+  background: #fdffcd;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+.forcast-heading {
+  display: block;
+  margin: 0 auto;
 }
