@@ -91,8 +91,14 @@ li {
 .icon-1,
 .icon-2,
 .icon-3,
-#col {
+.forcast-day {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   font-size: 25px;
+}
+
+.weather {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
 }
