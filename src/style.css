@@ -71,6 +71,7 @@ body {
 .serach-button:hover {
   transition: 300ms;
   border-color: transparent;
+  background-color: transparent;
 }
 
 .current-loc {
