@@ -68,7 +68,7 @@ body {
   background-color: #fbfcd8;
 }
 
-.serach-button:hover {
+.search-button:hover {
   transition: 300ms;
   border-color: transparent;
   background-color: transparent;
@@ -84,6 +84,13 @@ body {
   width: 130px;
   height: 40px;
 }
+
+.current-loc:hover {
+  transition: 300ms;
+  border-color: transparent;
+  background-color: transparent;
+}
+
 
 #info {
   font-family: "Rokkitt", serif;
@@ -109,16 +116,9 @@ li {
   font-size: 18px;
 }
 
-#C-units {
-  margin-left: 0px;
-}
-
 #C-units,
 #F-units {
   text-decoration: none;
   color: black;
-}
-
-#temp {
-  margin-right: 0px;
+  margin-left: 0px;
 }
