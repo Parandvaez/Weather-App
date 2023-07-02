@@ -38,6 +38,7 @@
       href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -74,7 +75,7 @@
         <br />
         <div class="container-2">
           <div class="today">
-            <h2 class="city-name">Tehran, IRI</h2>
+            <h2 class="city-name">Tehran</h2>
             <h3>
               <div class="time">10:00</div>
               <div class="day">Friday</div>
@@ -84,7 +85,7 @@
             <div class="row">
               <div class="col">
                 <div class="emoji">
-                  <i class="fa-solid fa-sun" style="color: #a89eff"></i>
+                  <i class="fa-solid fa-sun" id="weather-icon" style="color: #a89eff"></i>
                 </div>
                 <span id="temp">25°</span>
                 <a href="" class="units" id="F-units">F </a>|
@@ -92,9 +93,9 @@
               </div>
               <div class="col" id="info">
                 <ul>
-                  <li>Humidity: 23%</li>
-                  <li>Wind: 11 mph</li>
-                  <li>Air Quality: Fair</li>
+                  <li id="humidity">Humidity: 23%</li>
+                  <li id="wind">Wind: 11 mph</li>
+                  <li id="air-quality">Air Quality: Fair</li>
                 </ul>
               </div>
             </div>
@@ -102,7 +103,7 @@
         </div>
         <hr />
         <div class="container-3">
-          <h2 class="forcast-heading">Forcast</h2>
+          <h2 class="forcast-heading" id="forecast">Forecast</h2>
           <br />
           <br />
           <div class="row">
