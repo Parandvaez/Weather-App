@@ -12,11 +12,11 @@ function showDate(timestamp) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   let day = days[currentData.getDay()];
   if (hours > 18) {
-    let bg = document.querySelector("#body");
+    let bg = document.querySelector("body");
     bg.classList.remove("morning");
     bg.classList.add("night");
   } else if (hours > 12) {
-    let bg = document.querySelector("#body");
+    let bg = document.querySelector("body");
     bg.classList.remove("morning");
     bg.classList.add("evening");
   }
@@ -68,7 +68,7 @@ function getForecast(city) {
 function showTemp(response) {
   let temp = document.querySelector("#temp");
   temp.innerHTML = Math.round(response.data.temperature.current);
-  let city = document.querySelector("#city-name");
+  let city = document.querySelector(".city-name");
   city.innerHTML = response.data.city;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = Math.round(response.data.temperature.humidity);
@@ -115,17 +115,15 @@ function changeUnitF(event) {
   tempF.innerHTML = Math.round(farenheitTemp);
 }
 
-function currentPositionTemp(position, response) {
+function currentPositionTemp(position) {
   let lon = position.coords.longitude;
   let lat = position.coords.latitude;
-  let city = document.querySelector("#city-name");
-  city.innerHTML = response.data.city;
   let apiKeylocation = "003t332ed0o5bff6b090e30a0649afb0";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKeylocation}&units=metric`;
   axios.get(apiUrl).then(showTemp);
 }
 
-let currentPosition = document.querySelector("#current-loc");
+let currentPosition = document.querySelector(".current-loc");
 currentPosition.addEventListener(
   "click",
   navigator.geolocation.getCurrentPosition(currentPositionTemp)
@@ -137,7 +135,7 @@ Fahrenheit.addEventListener("click", changeUnitF);
 let celsius = document.querySelector("#C-units");
 celsius.addEventListener("click", changeUnitC);
 
-let form = document.querySelector("#input-search-city");
+let form = document.querySelector("#search");
 form.addEventListener("submit", handleSubmit);
 
 let cTemp = null;

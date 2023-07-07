@@ -14,7 +14,7 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 500px;
-  height: 600px;
+  height: 700px;
   background: #fdffcd;
 }
 
@@ -91,7 +91,6 @@ body {
   background-color: transparent;
 }
 
-
 #info {
   font-family: "Rokkitt", serif;
   font-size: 18px;
@@ -121,4 +120,10 @@ li {
   text-decoration: none;
   color: black;
   margin-left: 0px;
+}
+
+#description {
+  font-family: "Rokkitt", serif;
+  font-size: 18px;
+  margin-left: 20px;
 }
