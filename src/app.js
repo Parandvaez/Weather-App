@@ -55,7 +55,10 @@ function displayForcast(response) {
     }
   });
 
- forcastHTML = forcastHTML + `</div>`;
+  // kodaye css ro bar asas class ha o id ha taghir bede !!
+  // badesh  halat 5 ghesmati grid bootstrap ro emtehan kon ke karet khoskel she
+
+  forcastHTML = forcastHTML + `</div>`;
   forecastElement.innerHTML = forcastHTML;
 }
 
