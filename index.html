@@ -79,7 +79,7 @@
           </div>
           <div class="waether-info">
             <div class="row">
-              <div class="col">
+              <div class="col-md-6">
                 <div class="emoji">
                   <img
                     src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
@@ -87,18 +87,16 @@
                     id="weather-icon"
                   />
                 </div>
-                <span id="temp">25°</span>
-                <br />
-                <span id="description">clear</span>
+                <div id="temp1"><span id="temp"></span> °</div>
                 <div class="units">
                   <a href="" class="units" id="F-units">F </a>|
                   <a href="" class="units" id="C-units">C</a>
                 </div>
               </div>
-              <div class="col" id="info">
+              <div class="col-md-6" id="info">
                 <ul>
-                  <li id="humidity">Humidity: 23%</li>
-                  <li id="wind">Wind: 11 mph</li>
+                  <li >Humidity: <span id="humidity"></span>%</li>
+                  <li >Wind: <span id="wind"></span>mph</li>
                   <li id="air-quality">Air Quality: Fair</li>
                 </ul>
               </div>
@@ -107,7 +105,7 @@
         </div>
         <hr />
         <div class="container-3">
-          <h2 class="forcast-heading" id="forecast">Forecast</h2>
+          <h2 class="forcast-heading" id="forecast"><div class="forecast-2">Forecast</div></h2>
           <br />
           <br />
           <div class="row">

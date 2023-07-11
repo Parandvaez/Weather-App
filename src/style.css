@@ -127,3 +127,31 @@ li {
   font-size: 18px;
   margin-left: 20px;
 }
+
+#forcast-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.forcast-date {
+  font-size: 15px;
+}
+
+.forcast,
+#temp-max,
+#temp-min {
+  font-size: 15px;
+}
+
+#description,
+#date {
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  margin-left: 35px;
+}
+
+
+#temp1{
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+}

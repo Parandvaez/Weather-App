@@ -9,7 +9,7 @@ function showDate(timestamp) {
   if (mins < 10) {
     mins = `0${mins}`;
   }
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let day = days[currentData.getDay()];
   if (hours > 18) {
     let bg = document.querySelector("body");
@@ -27,30 +27,31 @@ function showDate(timestamp) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   return days[day];
 }
 function displayForcast(response) {
   console.log(response.data.daily);
   let forecastData = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let forcastHTML = `<div>`;
+  let forcastHTML = `<div > `;
   forecastData.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index < 3) {
       forcastHTML =
         forcastHTML +
-        ` <img src="${forecastDay.condition.icon_url}"
+        `<div id="forecast1">
+        <img src="${forecastDay.condition.icon_url}"
                   alt="" id="forcast-icon"/>
                 <span class="forcast-date"><strong>${formatDay(
                   forecastDay.time
                 )}</strong></span
-                ><br /><span class="forcast">Windy </span
-                ><span class="weather-forcast-temp-min id="temp-max"> ${Math.round(
+                ><br /><span class="forcast">Sunny </span
+                ><span class="weather-forcast-temp-min" id="temp-max"> ${Math.round(
                   forecastDay.temperature.minimum
                 )}° </span
                 ><span class="weather-forcast-temp-max" id="temp-min">${Math.round(
                   forecastDay.temperature.maximum
-                )}° C</span>
+                )}° C</span></div>
       `;
     }
   });
@@ -143,4 +144,4 @@ form.addEventListener("submit", handleSubmit);
 
 let cTemp = null;
 
-search("paris");
+search("Tehran");
