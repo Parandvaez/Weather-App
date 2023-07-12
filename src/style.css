@@ -15,7 +15,10 @@ body {
   margin-bottom: 50px;
   width: 500px;
   height: 700px;
-  background: #fdffcd;
+}
+
+.forecast-part {
+  background-color: #e8a0bf;
 }
 
 .city-name,
@@ -150,8 +153,7 @@ li {
   margin-left: 35px;
 }
 
-
-#temp1{
+#temp1 {
   font-size: 30px;
   font-family: "Roboto Slab", serif;
 }

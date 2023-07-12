@@ -47,26 +47,26 @@
     <div class="container-main">
       <div class="main">
         <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <form class="search-for-city" id="search">
+          <form class="search-for-city" id="search">
+            <div class="row">
+              <div class="col-6">
                 <input
                   type="search"
                   class="search-control"
                   id="input-search-city"
                   placeholder="Search for a city"
                 />
-              </form>
+              </div>
+              <div class="col-2">
+                <button type="submit" class="search-button">🔍</button>
+              </div>
+              <div class="col-4">
+                <button type="button" class="current-loc">
+                  Current Location
+                </button>
+              </div>
             </div>
-            <div class="col-2">
-              <button type="submit" class="search-button">🔍</button>
-            </div>
-            <div class="col-4">
-              <button type="submit" class="current-loc">
-                Current Location
-              </button>
-            </div>
-          </div>
+          </form>
         </div>
         <br />
         <div class="container-2">
@@ -95,8 +95,8 @@
               </div>
               <div class="col-md-6" id="info">
                 <ul>
-                  <li >Humidity: <span id="humidity"></span>%</li>
-                  <li >Wind: <span id="wind"></span>mph</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span>mph</li>
                   <li id="air-quality">Air Quality: Fair</li>
                 </ul>
               </div>
@@ -105,12 +105,12 @@
         </div>
         <hr />
         <div class="container-3">
-          <h2 class="forcast-heading" id="forecast"><div class="forecast-2">Forecast</div></h2>
+          <h2 class="forcast-heading" id="forecast">
+            <div class="forecast-2">Forecast</div>
+          </h2>
           <br />
           <br />
-          <div class="row">
-            </div>
-          </div>
+          <div class="row"></div>
         </div>
       </div>
     </div>
