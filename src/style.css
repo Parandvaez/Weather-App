@@ -1,9 +1,5 @@
-body {
-  background: radial-gradient(
-    905px at 4.9% 85.8%,
-    rgb(255, 243, 242) 0.1%,
-    rgb(255, 247, 220) 57.6%
-  );
+#body {
+  background: #fdf4f5;
 }
 
 .main {
@@ -15,10 +11,15 @@ body {
   margin-bottom: 50px;
   width: 500px;
   height: 700px;
+  background-color: #d2e9e9;
 }
 
-.forecast-part {
-  background-color: #e8a0bf;
+.container-3 {
+  border: 1px dashed #291d08;
+  border-radius: 5px;
+  background-color: #fdf7c3;
+  margin: 30px;
+  padding: 23px;
 }
 
 .city-name,
@@ -59,7 +60,9 @@ body {
   width: 240px;
   height: 40px;
   text-align: left;
-  background-color: #fbfcd8;
+  background-color: #fdf7c3;
+  font-family: "Abel", sans-serif;
+  font-size: 14px;
 }
 
 .search-button {
@@ -68,7 +71,7 @@ body {
   font-size: 25px;
   border-radius: 100px;
   border: 1px solid rgb(95, 92, 92);
-  background-color: #fbfcd8;
+  background-color: #fdf7c3;
 }
 
 .search-button:hover {
@@ -80,7 +83,7 @@ body {
 .current-loc {
   border-radius: 30px;
   border: 1px solid rgb(95, 92, 92);
-  background-color: #fbfcd8;
+  background-color: #fdf7c3;
   font-family: "Abel", sans-serif;
   font-size: 14px;
   margin-left: 3px;
@@ -156,4 +159,11 @@ li {
 #temp1 {
   font-size: 30px;
   font-family: "Roboto Slab", serif;
+}
+
+.forecast-2 {
+  text-align: center;
+  font-family: "Cantarell", sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
 }

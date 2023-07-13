@@ -9,7 +9,15 @@ function showDate(timestamp) {
   if (mins < 10) {
     mins = `0${mins}`;
   }
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   let day = days[currentData.getDay()];
   if (hours > 18) {
     let bg = document.querySelector("body");
@@ -27,7 +35,15 @@ function showDate(timestamp) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   return days[day];
 }
 function displayForcast(response) {
@@ -128,11 +144,9 @@ function currentPositionTemp(position) {
 }
 
 let currentPosition = document.querySelector(".current-loc");
-currentPosition.addEventListener(
-  "click",
+currentPosition.addEventListener("click", () =>
   navigator.geolocation.getCurrentPosition(currentPositionTemp)
 );
-
 let Fahrenheit = document.querySelector("#F-units");
 Fahrenheit.addEventListener("click", changeUnitF);
 
