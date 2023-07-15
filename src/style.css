@@ -1,5 +1,6 @@
-#body {
-  background: #fdf4f5;
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/053/original/7681908.jpg?1689441495");
+  background-size: 100%;
 }
 
 .main {
@@ -11,13 +12,13 @@
   margin-bottom: 50px;
   width: 500px;
   height: 700px;
-  background-color: #d2e9e9;
+  background-color: #fdf7c3;
 }
 
 .container-3 {
   border: 1px dashed #291d08;
   border-radius: 5px;
-  background-color: #fdf7c3;
+  background-color: #d2e9e9;
   margin: 30px;
   padding: 23px;
 }
@@ -60,7 +61,7 @@
   width: 240px;
   height: 40px;
   text-align: left;
-  background-color: #fdf7c3;
+  background-color: #d2e9e9;
   font-family: "Abel", sans-serif;
   font-size: 14px;
 }
@@ -71,7 +72,7 @@
   font-size: 25px;
   border-radius: 100px;
   border: 1px solid rgb(95, 92, 92);
-  background-color: #fdf7c3;
+  background-color: #d2e9e9;
 }
 
 .search-button:hover {
@@ -83,7 +84,7 @@
 .current-loc {
   border-radius: 30px;
   border: 1px solid rgb(95, 92, 92);
-  background-color: #fdf7c3;
+  background-color: #d2e9e9;
   font-family: "Abel", sans-serif;
   font-size: 14px;
   margin-left: 3px;

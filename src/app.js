@@ -79,6 +79,7 @@ function displayForcast(response) {
   forecastElement.innerHTML = forcastHTML;
 }
 
+
 function getForecast(city) {
   console.log(city);
   let forcastapiKey = "003t332ed0o5bff6b090e30a0649afb0";
