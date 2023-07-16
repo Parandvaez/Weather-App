@@ -171,5 +171,7 @@ li {
 
 footer {
   text-align: center;
-  color: black;
+  margin-top: 10px;
+  color: rgb(142, 142, 255);
+  text-shadow: rgb(142, 142, 255);
 }
